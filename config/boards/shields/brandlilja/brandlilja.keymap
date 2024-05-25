@@ -12,17 +12,17 @@
     combos {
         compatible = "zmk,combos";
         combo_bluetooth {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <28 65>;
             bindings = <&tog BLUET>;
         };
         combo_bootloader_right {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <41 65>;
             bindings = <&bootloader>;
         };
         combo_bootloader_left {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <0 1>;
             bindings = <&bootloader>;
         };
@@ -37,7 +37,7 @@
                 &kp TAB       &kp Q     &kp W      &kp E      &kp R      &kp T      &kp LBKT             &kp RBKT      &kp Y      &kp U      &kp I      &kp O      &kp P        &tog EXTRA // 27 (28)
                 &kp ESC/*28*/ &kp A     &kp S      &kp D      &kp F      &kp G      &kp RETURN           &kp SQT       &kp H      &kp J      &kp K      &kp L      &kp SCLN     &tog COLEM // 41 (42)
                               &kp Z     &kp X      &kp C      &kp V      &kp B      &kp LCMD             &kp RCTRL     &kp N      &kp M      &kp CMMA   &kp DOT    &kp FSLH     
-                                                              &kp LALT   &kp SPC    &kp LSHFT            &kp RALT      &kp BSPC   &mo FN
+                                                              &kp LCTRL  &kp SPC    &kp LSHFT            &kp RALT      &kp BSPC   &mo FN
                                                                                                                                   // 65 (66)
             >;
         };
@@ -68,7 +68,7 @@
                 &trans        &trans    &trans     &trans     &trans     &trans     &trans               &trans        &trans        &trans      &trans     &trans      &trans       &trans
                 &trans        &trans    &trans     &trans     &trans     &trans     &trans               &trans        &trans        &kp LEFT    &kp DOWN   &kp UP      &kp RIGHT    &trans
                               &trans    &trans     &trans     &trans     &trans     &trans               &trans        &trans        &trans      &trans     &trans      &trans       
-                                                              &trans     &trans     &trans               &trans        &trans        &trans      
+                                                              &trans     &trans     &kp CAPS             &trans        &kp DEL       &trans      
             >;
         };
 
