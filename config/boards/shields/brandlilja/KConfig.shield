@@ -1,7 +1,10 @@
+config SHIELD_BRANDLILJA
+    bool
+
 config SHIELD_BRANDLILJA_LEFT
     def_bool $(shields_list_contains,brandlilja_left)
-    select SHIELD_BRANDLILJA_LEFT
+    select SHIELD_BRANDLILJA
 
 config SHIELD_BRANDLILJA_RIGHT
     def_bool $(shields_list_contains,brandlilja_right)
-    select SHIELD_BRANDLILJA_RIGHT
+    select SHIELD_BRANDLILJA
