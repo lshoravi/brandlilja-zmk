@@ -1,4 +1,4 @@
-#include "skeletyl.dtsi"
+#include "brandlilja.dtsi"
 
 &kscan0 {
     col-gpios

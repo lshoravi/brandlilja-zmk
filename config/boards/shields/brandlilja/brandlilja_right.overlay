@@ -1,4 +1,4 @@
-#include "skeletyl.dtsi"
+#include "brandlilja.dtsi"
 
 &default_transform {
     col-offset = <7>;
