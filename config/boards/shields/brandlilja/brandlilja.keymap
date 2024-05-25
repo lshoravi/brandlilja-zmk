@@ -16,6 +16,16 @@
             key-positions = <28 65>;
             bindings = <&tog BLUET>;
         };
+        combo_bootloader_right {
+            timeout-ms = <50>;
+            key-positions = <41 65>;
+            bindings = <&bootloader>;
+        };
+        combo_bootloader_left {
+            timeout-ms = <50>;
+            key-positions = <0 65>;
+            bindings = <&bootloader>;
+        };
     };
 
     keymap {
