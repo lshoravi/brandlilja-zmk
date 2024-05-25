@@ -1,0 +1,12 @@
+file_format: "1"
+id: brandlilja
+name: Brandlilja
+type: shield
+url: https://github.com/lshoravi/brandlilja
+requires: [nice_nano]
+exposes: [i2c_oled]
+features:
+  - keys
+siblings:
+  - brandlilja_left
+  - brandlilja_right
