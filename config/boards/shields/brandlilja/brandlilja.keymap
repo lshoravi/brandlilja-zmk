@@ -23,7 +23,7 @@
         };
         combo_bootloader_left {
             timeout-ms = <50>;
-            key-positions = <0 65>;
+            key-positions = <0 1>;
             bindings = <&bootloader>;
         };
     };
@@ -36,8 +36,8 @@
                 &kp GRAVE     &kp N1    &kp N2     &kp N3     &kp N4     &kp N5     &kp MINUS            &kp EQUAL     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0       &kp  BSLH
                 &kp TAB       &kp Q     &kp W      &kp E      &kp R      &kp T      &kp LBKT             &kp RBKT      &kp Y      &kp U      &kp I      &kp O      &kp P        &tog EXTRA // 27 (28)
                 &kp ESC/*28*/ &kp A     &kp S      &kp D      &kp F      &kp G      &kp RETURN           &kp SQT       &kp H      &kp J      &kp K      &kp L      &kp SCLN     &tog COLEM // 41 (42)
-                &none         &kp Z     &kp X      &kp C      &kp V      &kp B      &kp LCMD             &kp RCTRL     &kp N      &kp M      &kp CMMA   &kp DOT    &kp FSLH     &none
-                &none         &none     &none      &none      &kp LALT   &kp SPC    &kp LSHFT            &kp RALT      &kp BSPC   &mo FN     &none      &none      &none        &none
+                              &kp Z     &kp X      &kp C      &kp V      &kp B      &kp LCMD             &kp RCTRL     &kp N      &kp M      &kp CMMA   &kp DOT    &kp FSLH     
+                                                              &kp LALT   &kp SPC    &kp LSHFT            &kp RALT      &kp BSPC   &mo FN
                                                                                                                                   // 65 (66)
             >;
         };
@@ -47,8 +47,8 @@
                 &trans        &trans    &trans     &trans     &trans     &trans     &trans               &trans        &trans     &trans     &trans     &trans     &trans       &trans 
                 &trans        &kp Q     &kp W      &kp F      &kp P      &kp B      &trans               &trans        &kp J      &kp L      &kp U      &kp Y      &kp SCLN     &trans
                 &trans        &kp A     &kp R      &kp S      &kp T      &kp G      &trans               &trans        &kp M      &kp N      &kp E      &kp I      &kp O        &trans
-                &trans        &kp Z     &kp X      &kp C      &kp D      &kp V      &trans               &trans        &kp K      &kp H      &kp CMMA   &kp DOT    &kp FSLH     &trans
-                &trans        &trans    &trans     &trans     &trans     &trans     &trans               &trans        &trans     &trans     &trans     &trans     &trans       &trans
+                              &kp Z     &kp X      &kp C      &kp D      &kp V      &trans               &trans        &kp K      &kp H      &kp CMMA   &kp DOT    &kp FSLH     
+                                                              &trans     &trans     &trans               &trans        &trans     &trans
             >;
         };
 
@@ -57,8 +57,8 @@
                 &trans        &kp F1    &kp F2     &kp F3     &kp F4     &kp F5     &trans               &trans        &kp F6        &kp F7      &kp F8     &kp F9      &kp F10      &trans
                 &trans        &trans    &trans     &trans     &trans     &trans     &trans               &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &kp C_PREV &kp C_PP    &kp C_NEXT   &trans
                 &trans        &trans    &trans     &trans     &trans     &trans     &trans               &trans        &trans        &trans      &trans     &trans      &trans       &trans
-                &trans        &trans    &trans     &trans     &trans     &trans     &trans               &trans        &trans        &trans      &trans     &trans      &trans       &trans
-                &trans        &trans    &trans     &trans     &trans     &trans     &trans               &trans        &trans        &trans      &trans     &trans      &trans       &trans
+                              &trans    &trans     &trans     &trans     &trans     &trans               &trans        &trans        &trans      &trans     &trans      &trans             
+                                                              &trans     &trans     &trans               &trans        &trans        &trans                                                
             >;
         };
 
@@ -67,8 +67,8 @@
                 &trans        &trans    &trans     &trans     &trans     &trans     &trans               &trans        &trans        &trans      &trans     &trans      &trans       &trans
                 &trans        &trans    &trans     &trans     &trans     &trans     &trans               &trans        &trans        &trans      &trans     &trans      &trans       &trans
                 &trans        &trans    &trans     &trans     &trans     &trans     &trans               &trans        &trans        &kp LEFT    &kp DOWN   &kp UP      &kp RIGHT    &trans
-                &trans        &trans    &trans     &trans     &trans     &trans     &trans               &trans        &trans        &trans      &trans     &trans      &trans       &trans
-                &trans        &trans    &trans     &trans     &trans     &trans     &trans               &trans        &trans        &trans      &trans     &trans      &trans       &trans
+                              &trans    &trans     &trans     &trans     &trans     &trans               &trans        &trans        &trans      &trans     &trans      &trans       
+                                                              &trans     &trans     &trans               &trans        &trans        &trans      
             >;
         };
 
@@ -77,8 +77,8 @@
                 &trans        &bt BT_SEL 0    &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4   &trans               &trans        &trans        &trans      &trans     &trans      &trans       &trans
                 &trans        &trans          &trans           &trans           &trans           &trans         &trans               &trans        &trans        &trans      &trans     &trans      &trans       &trans
                 &trans        &trans          &trans           &trans           &trans           &trans         &trans               &trans        &trans        &trans      &trans     &trans      &trans       &trans
-                &trans        &trans          &trans           &trans           &trans           &trans         &trans               &trans        &trans        &trans      &trans     &trans      &trans       &trans
-                &trans        &trans          &trans           &trans           &trans           &trans         &trans               &trans        &trans        &trans      &trans     &trans      &trans       &trans
+                              &trans          &trans           &trans           &trans           &trans         &trans               &trans        &trans        &trans      &trans     &trans      &trans
+                                                                                &trans           &trans         &trans               &trans        &trans        &trans
             >;
         };
     };
