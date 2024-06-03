@@ -31,7 +31,4 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5) RC(2,6)                RC(2,13) 
         diode-direction = "col2row";
     };
 
-    nice_view_spi: &spi0 {       
-        cs-gpios = <&gpio1 1 GPIO_ACTIVE_HIGH>;
-    };
 };
