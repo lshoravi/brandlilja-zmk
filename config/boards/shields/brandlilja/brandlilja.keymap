@@ -45,7 +45,7 @@ nice_view_spi: &spi0 {
         };
         combo_bootloader_right {
             timeout-ms = <100>;
-            key-positions = <13 14>;
+            key-positions = <12 13>;
             bindings = <&bootloader>;
         };
         combo_bootloader_left {
