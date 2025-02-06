@@ -1,4 +1,4 @@
-if SHIELD_BRANDLILJA_RIGHT
+if SHIELD_BRANDLILJA_LEFT
 
 config ZMK_KEYBOARD_NAME
     default "Brandlilja"
